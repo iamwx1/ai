@@ -1,0 +1,7 @@
+git clone https://github.com/levihsu/OOTDiffusion
+conda create -n ootd python==3.10
+conda activate ootd
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2
+pip install -r requirements.txt
+cd OOTDiffusion/run
+python run_ootd.py --model_path <model-image-path> --cloth_path <cloth-image-path> --model_type dc --category 2 --scale 2.0 --sample 4
